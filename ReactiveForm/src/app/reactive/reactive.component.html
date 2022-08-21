@@ -1,0 +1,27 @@
+<div class="d-flex justify-content-center">
+    <div class="form">
+        <h2>Add or Update Employe</h2>
+        <hr>
+        <form [formGroup]="reactiveForm" (ngSubmit)="onConfim()">
+        <div class="mb-3">
+            <label for="newName" class="form-label">Name</label>
+            <input type="text" class="form-control" id="inputName" formControlName="name" placeholder="Employee Name">
+        </div>
+        <div *ngIf="reactiveForm.touched">
+            <span style="color:red" *ngIf="!(reactiveForm.get('name'))?.valid">Please Enter Name!</span>
+        </div>
+        <div class="mb-3">
+            <label for="newId" class="form-label">ID</label>
+            <input type="number" class="form-control" id="inputId" formControlName="id" placeholder="Employee ID">
+        </div>
+        <div *ngIf="reactiveForm.touched">
+            <span style="color:red" *ngIf="!(reactiveForm.get('id'))?.valid">Please Enter Valid ID!</span>
+        </div>
+        <div class="mb-3">
+            <label for="newAddress" class="form-label">Address</label>
+            <input type="text" class="form-control" id="inputAddress" formControlName="address" placeholder="Employee Address">
+        </div>
+        <button type="submit" class="btn btn-primary">Confirm</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+.form{
+    border-radius: 5px;
+    background-color: aquamarine;
+    padding: 20px;
+    width: 420px;
+    margin: 10 auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+input.ng-invalid.ng-touched{
+    border:red 2px solid;
+
+}
+/* To REMOVE SPINNER OR SCROLLER FOR NUMBER
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
