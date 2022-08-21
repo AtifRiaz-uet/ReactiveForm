@@ -14,8 +14,8 @@ export class DataPostingService {
 
   constructor(private http:HttpClient) { }
 
-  postEmployeDetail(ID:number): Observable<Student>{
-    let _empurl = `http://localhost/AngApi/api/Values/${ID}`;
-    return this.http.post<Student>(_empurl)
-  }
+  // postEmployeDetail(ID:number): Observable<Student>{
+  //   let _empurl = `http://localhost/AngApi/api/Values/${ID}`;
+  //   // return this.http.post<Student>(_empurl)
+  // }
 }
